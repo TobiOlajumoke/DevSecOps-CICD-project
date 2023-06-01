@@ -111,7 +111,67 @@ Then i created a Dotnet Webapp
 ![Alt text](Images/release%20c.png)
 
 
+
 - Configure Development environment task
 ![Alt text](Images/release%20d%20for%20dev%20task%20setup.png)
 
-- Configure 
+- Add artiact and enable continous intergration trigger
+![Alt text](Images/add%20arifact.png)
+
+
+- Create QA and Production app services
+![Alt text](Images/hello%20QA%20appservice.png)
+![Alt text](Images/Hello%20Prod.png)
+
+- Upgrade pricing to have access to some feature such as deployment slot 
+![Alt text](Images/select%20production%20pricing.png)
+
+- create a staging production environment
+
+![Alt text](Images/PROD%20solt.png)
+![Alt text](Images/stagging%20created.png)
+![Alt text](Images/stagging%20env.png)
+
+
+- My Azure devop project and go to release pipeline
+
+- set QA task
+![Alt text](Images/QA%20TASK%20SETUP.png)
+
+ 
+- I enabled pre-deployment approval 
+![Alt text](Images/predeployment%20approval%20QA.png)
+
+- Production site before swaping with staging env slot
+![Alt text](Images/PROD%20SITE%20doamin.png)
+![Alt text](Images/PROD%20SITE.png)
+
+
+- Setup Production staging environment  
+![Alt text](Images/PROD%20solt%203.png)
+![Alt text](Images/PROD%20solt%204.png)
+![Alt text](Images/successfully%20deployecd%20to%20prod(staging%20env).png)
+
+- We need to swap stagingenv with Production
+![Alt text](Images/PROD%20swap%20staging%20site.png)
+
+  - ![Alt text](Images/PROD%20swap%20staging%20to%20Prod%20site.png)
+
+  Select Source and target then swap
+  - ![Alt text](Images/PROD%20swap%20staging%20to%20Prod%20site%201.png)
+  - ![Alt text](Images/sucessful%20swap.png)
+
+
+## Our swap was sucessful let's see if it's up nd running in production server 
+![Alt text](Images/PROD%20swaped%20to%20prod%20SITE%20doamin.png)
+
+
+
+# UP AND RUNNING
+![Alt text](Images/up%20and%20running.png)
+
+
+
+
+
+
