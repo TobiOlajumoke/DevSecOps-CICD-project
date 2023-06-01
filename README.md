@@ -23,7 +23,7 @@ The company has identified an issue around it’s solution delivery process and 
 
 ![Alt text](Images/repo%20sync%202.png)
 
-# Task 2
+# Task 2. Working on Azure DevOps, create a Git repository and check in the code 
 First thing is to create a project in AzureDevops 
  
  - I named mine `Hello-World
@@ -37,3 +37,81 @@ First thing is to create a project in AzureDevops
 
 ![Alt text](Images/repo%20sync%201.png)
 
+- refresh the webpage and we see the code 
+![Alt text](Images/repo%20refresh.png)
+
+
+# Task 3. Create and run an Azure Build Pipeline for the solution 
+
+- Go to pipeline
+![Alt text](Images/add%20sonarcloud.png)
+![Alt text](Images/add%20sonarcloud%202.png)
+![Alt text](Images/add%20sonarcloud%201.png)
+
+I added Sonar cloud plugin to the organistaion
+I then went to https://www.sonarsource.com/products/sonarcloud/ to handle configurations 
+
+
+SonarCloud performs static code analysis, identifying potential bugs, vulnerabilities, and code smells, allowing you to address them early in the development process. By integrating SonarCloud into your CI/CD pipeline, you can ensure that your code meets industry standards and best practices, ultimately improving the overall quality and security of your software.
+- get a PAT token for the sonarcloud intergation 
+![Alt text](Images/sonar%20pat.png)
+- Intergtrated a service connection with sonarcloud  
+![Alt text](Images/service%20connection%20i.png)
+
+![Alt text](Images/service%20connection%20ii.png)
+
+![Alt text](Images/service%20connection%20iii.png)
+
+- Let's build and add sonar cloud to othe agent job
+
+![Alt text](Images/service%20connection%20iv.png)
+
+![Alt text](Images/asp1.png)
+
+![Alt text](Images/service%20connection%20vi.png)
+
+- set the jobs up
+![Alt text](Images/build%20pipeline.png)
+![Alt text](Images/ran%20sonarcloud%20jobs%20with%20code.png)
+
+![Alt text](Images/build%20sucessful.png)
+
+
+- using sonacloud to recieve summary report of the above the code technical debts 
+
+![Alt text](Images/sonarcloud%20summary.png)
+
+
+
+
+# Task 4. Create an Azure app service for the solution 
+
+using the auzre portal i created:
+
+- A resource group
+- An app service plan
+
+Then i created a Dotnet Webapp
+![Alt text](Images/app%20service.png)
+![Alt text](Images/app%20service1.png)
+![Alt text](Images/app%20service2.png)
+
+![Alt text](Images/appservice%20up%20and%20running.png)
+
+# Task 5 Create and run an Azure Release pipeline for the solution
+
+- Go to release
+
+![Alt text](Images/release%20q.png)
+
+- New pipeline
+![Alt text](Images/release%20b.png)
+
+- Select azure app service deployment
+![Alt text](Images/release%20c.png)
+
+
+- Configure Development environment task
+![Alt text](Images/release%20d%20for%20dev%20task%20setup.png)
+
+- Configure 
